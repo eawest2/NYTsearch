@@ -1,7 +1,7 @@
 import React from "react";
 
 const Jumbotron = ({ children }) => (
-  <div className="jumbotron">
+  <div className="jumbotron my-2 bg-secondary text-white">
     {children}
   </div>
 );

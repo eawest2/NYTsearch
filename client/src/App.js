@@ -42,11 +42,15 @@ class App extends Component {
     ));
     
   };
+
+  saveArticle = (article) => {
+
+  };
     
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid bg-dark">
         <Jumbotron>
           <h1>New York Times Article Scraper</h1>
         </Jumbotron>
@@ -54,7 +58,7 @@ class App extends Component {
         <div className="row">
           <div className="col-12">
 
-            <div className="card">
+            <div className="card my-2 bg-secondary text-white">
               <h5 className="card-header">Search</h5>
               <div className="card-body">
                 <InputForm 
@@ -67,7 +71,7 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card my-2 bg-secondary text-white">
               <h5 className="card-header">Results</h5>
               <div className="card-body">
                 {this.state.results.map(result => (
@@ -76,22 +80,10 @@ class App extends Component {
                     id={result._id}
                     headline={result.headline.main}
                     saveArticle={this.saveArticle}
-                    url={result.url}
+                    url={result.web_url}
                     date={result.date}
                   />
                 ))}
-              </div>
-            </div>
-
-            <div className="card">
-              <h5 className="card-header">Saved Articles</h5>
-              <div className="card-body">
-                <ul className="list-group">
-                  <li className="list-group-item">Saved 1
-                    <button type="submit" className="btn btn-danger float-right" id="delete-art">Remove</button>
-                  </li>
-                  <li className="list-group-item">Saved 2</li>
-                </ul>
               </div>
             </div>
           </div>

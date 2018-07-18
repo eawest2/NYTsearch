@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Jumbotron from "./Components/Jumbotron";
-import InputForm from "./Components/InputForm";
-import Results from "./Components/Results";
-import API from "./utils/API";
+import Jumbotron from "./components/Jumbotron";
+import InputForm from "./components/InputForm";
+import Results from "./components/Results";
+import API from "./utils/Api";
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 

@@ -1,0 +1,10 @@
+.header{
+  border-bottom-color: black;
+  color: grey;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+
+hr{
+  width: 75%;
+}

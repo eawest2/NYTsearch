@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Jumbotron from "./components/Jumbotron";
-import InputForm from "./components/InputForm";
-import Results from "./components/Results";
-import API from "./utils/Api";
+import Jumbotron from "./Components/Jumbotron";
+import InputForm from "./Components/InputForm";
+import Results from "./Components/Results";
+import API from "./utils/API";
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Jumbotron>
-          <h1>New York Times Article Scrubber</h1>
+          <h1>New York Times Article Scraper</h1>
         </Jumbotron>
 
         <div className="row">
